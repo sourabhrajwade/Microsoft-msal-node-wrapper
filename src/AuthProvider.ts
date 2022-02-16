@@ -4,6 +4,7 @@
  */
 
 import {
+    Request,
     Response,
     NextFunction
 } from "express";
@@ -13,8 +14,6 @@ import {
     OIDC_DEFAULT_SCOPES,
     PromptValue
 } from '@azure/msal-common';
-
-import {Request} from 'express-session';
 
 import {
     ConfidentialClientApplication,
